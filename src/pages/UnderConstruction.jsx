@@ -1,3 +1,5 @@
+import React from "react";
+
 export default function UnderConstruction() {
   return (
     <div className="h-screen flex flex-col justify-center align-middle">
