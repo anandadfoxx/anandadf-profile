@@ -1,4 +1,4 @@
-import axios from 'api';
+import axios from 'api/api';
 
 const blogApi = {
   getList: (page) => {
