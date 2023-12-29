@@ -22,7 +22,7 @@ export default function useFetchBlogs() {
       fetchData()
       .then((data) => {
         const newData = [...blogs, ...data];
-        if (data.length != 10) {
+        if (data.length !== 10) {
           setIsEndOfPage(true);
         }
         console.log(data);

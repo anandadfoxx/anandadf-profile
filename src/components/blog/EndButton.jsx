@@ -21,6 +21,6 @@ export default function EndButton(props) {
             break;
         }
       }
-    } className="mt-4 mb-6 rounded-md text-light-beige text-xl">{btnText()}</button>
+    } className="mt-4 rounded-md text-light-beige text-xl">{btnText()}</button>
   );
 }

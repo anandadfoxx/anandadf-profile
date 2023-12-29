@@ -7,15 +7,15 @@ export default function Blog() {
   // fetchData()
 
   return (
-    <div className="h-screen pt-20 flex flex-col items-center sections overflow-y-scroll scrollbar-hide">
-      <div id="blog-list" className="w-6/12 flex flex-col items-center">
+    <div className="flex-1 py-6 flex flex-col items-center sections overflow-auto">
+      <div id="blog-list" className="w-7/12 flex flex-col items-center">
         {!isLoading && (
           !apiError ? (
-            <ul>
+            <ul className="w-full">
               {
                 blogs.map((blog, index) => (
                   <li key={index}>
-                    <BlogCard link={blog.slug} title={blog.title} date={blog.date_posted} description={blog.description} lineDiv={true} />
+                    <BlogCard link={blog.slug} title={blog.title} date={blog.date_posted} description={blog.short_description} lineDiv={true} />
                   </li>
                 ))
               }

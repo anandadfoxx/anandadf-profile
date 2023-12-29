@@ -6,7 +6,7 @@ import AboutMe from "components/home/AboutMe";
 
 export default function Home() {
   return (
-    <div className="h-screen sections overflow-y-scroll snap-y snap-mandatory scrollbar-hide">
+    <div className="flex-1 sections overflow-auto">
       <Intro />
       <AboutMe />
       <Contact />
