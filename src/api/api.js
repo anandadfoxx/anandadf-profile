@@ -4,7 +4,7 @@ const getBaseUrl = (mode) => {
   let url;
   switch (mode) {
     case 'production':
-      url = 'https://be.anandadf.my.id';
+      url = 'https://profile-be.anandadf.my.id';
       break;
     case 'development':
       url = 'http://localhost:8080'
@@ -14,5 +14,5 @@ const getBaseUrl = (mode) => {
 }
 
 export default axios.create({
-  baseURL: getBaseUrl('development'),
+  baseURL: getBaseUrl('production'),
 });

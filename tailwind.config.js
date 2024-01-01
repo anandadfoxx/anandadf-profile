@@ -11,10 +11,24 @@ module.exports = {
       colors: {
         'dark-turquoise': '#113946',
         'light-beige': '#EAD7BB',
-      }
+      },
+      typography: (theme) => ({
+        DEFAULT: {
+          css: {
+            'max-width': '100%',
+            '*': {
+              color: theme('colors.light-beige'),
+            },
+            'img': {
+              'max-width': '65ch',
+            }
+          }
+        }
+      }),
     },
   },
   plugins: [
-    require('tailwind-scrollbar-hide')
+    require('tailwind-scrollbar-hide'),
+    require('@tailwindcss/typography')
   ],
 }
