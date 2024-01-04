@@ -40,8 +40,8 @@ export default function BlogDetail() {
           ?
           <h3 className="w-max text-light-beige text-2xl mb-3 hover:text-white">loading...</h3>
           : error == null ? (
-            <div className="w-7/12">
-              <h3 className="w-max text-light-beige text-2xl mb-8 hover:text-white"><Link to='/blog'>&#x2190; back to blog</Link></h3>
+            <div className="w-10/12 md:w-8/12">
+              <h3 className="w-max text-light-beige text-xl md:text-2xl mb-8 hover:text-white"><Link to='/blog'>&#x2190; back to blog</Link></h3>
               <BlogTitle title={blog['title']} />
               <DatePosted date={blog['date_posted']} />
               <BlogDescription description={blog['description']} />

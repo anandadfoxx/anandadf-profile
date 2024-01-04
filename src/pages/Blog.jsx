@@ -12,7 +12,7 @@ export default function Blog() {
       <Helmet>
         <title>Blogs - anandadf</title>
       </Helmet>
-      <div id="blog-list" className="w-7/12 flex flex-col items-center">
+      <div id="blog-list" className="w-10/12 lg:w-8/12 flex flex-col items-center">
         {!isLoading ? (
           !error ? (
             <ul className="w-full">
