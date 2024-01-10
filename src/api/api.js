@@ -4,7 +4,7 @@ const getBaseUrl = (mode) => {
   let url;
   switch (mode) {
     case 'production':
-      url = 'https://profile-be.anandadf.my.id';
+      url = 'https://anandadf.my.id/api/v1';
       break;
     case 'development':
       url = 'http://localhost:8080'
